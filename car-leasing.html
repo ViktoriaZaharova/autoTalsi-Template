@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manslizing</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256"/>
+  <link rel="apple-touch-icon" href="img/favicon/favicon.ico"/>
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="overlay-mobile"></div>
+<div class="mobile-search mobile-wrapper">
+  <div class="sidebar-head">
+    <h2>pick up a car</h2>
+    <div class="sidebar-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="sidebar-body">
+    <form method="post" class="form-search">
+      <label>
+        <input type="text" placeholder="Поиск по сайту" name="search">
+      </label>
+    </form>
+
+    <div class="sidebar-box">
+      <h4>Brand</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="All">All</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Model</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="All">All</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Year of issue</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">from</span>
+            <input type="text" name="dec" class="dec5">
+          </label>
+          <label>
+            <span class="range_val-text">to</span>
+            <input type="text" name="dec" class="dec6">
+          </label>
+        </div>
+        <div class="slider-range slider-range3"></div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
+          aria-controls="collapseItem4">Transmission</h4>
+      <div class="collapse" id="collapseItem4">
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Machine">Machine</option>
+              <option value="Mechanics">Mechanics</option>
+              <option value="Robot">Robot</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
+          aria-controls="collapseItem5">Body type</h4>
+      <div class="collapse" id="collapseItem5">
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Sedan">Sedan</option>
+              <option value="Station wagon">Station wagon</option>
+              <option value="Coupe">Coupe</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Price</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">from</span>
+            <input type="text" name="dec" class="dec7">
+          </label>
+          <label>
+            <span class="range_val-text">to</span>
+            <input type="text" name="dec" class="dec8">
+          </label>
+        </div>
+        <div class="slider-range slider-range4"></div>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+  </div>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="#" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+
+          <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <!--          <form method="post" class="form-search-mobile">-->
+          <!--            <label>-->
+          <!--              <input type="text" placeholder="Поиск..." name="search">-->
+          <!--            </label>-->
+          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+          <!--          </form>-->
+
+          <a href="#" class="btn-search-mobile">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+
+          <ul class="list-language ul-my">
+            <li><a href="#">LAT</a></li>
+            <li><a href="#" class="active">RUS</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+
+
+          <div class="schedule-box header-box">
+            <p>Operating mode:</p>
+            <span>I: 00 - 22:00</span>
+          </div>
+
+          <div class="header-box">
+            <p>E-mail:</p>
+            <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+          </div>
+
+
+          <div class="header-box header-contacts-box">
+            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+            <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for leasing</a>
+
+            <a href="tel:+37126612612" class="icon-phone">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <nav class="nav-menu">
+
+            <ul class="menu ul-my">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="auto-partners.html">Auto partners</a></li>
+              <li><a href="buying.html" class="active">Buying a car</a></li>
+              <li><a href="#about" class="go_to">About Us</a></li>
+              <li><a href="news.html">News </a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <ul class="list-language ul-my">
+              <li><a href="#">LAT</a></li>
+              <li><a href="#" class="active">RUS</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+
+            <div class="schedule-box header-box">
+              <p>Operating mode:</p>
+              <span>I: 00 - 22:00</span>
+            </div>
+
+            <div class="header-box">
+              <p>E-mail:</p>
+              <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="home home-leasing">
+
+  <div class="main-slider__item">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <div class="main-content">
+            <h1>Автолизинг</h1>
+            <div class="subtitle">Заём на покупку нового или <br>подержанного автомобиля</div>
+            <div class="box-text">
+              <ul class="list-dots ul-my font-500">
+                <li>На 100% официально и безопасно</li>
+                <li>Объективно оцениваем состояние</li>
+                <li>Покупаем любые автомобили</li>
+                <li>Предлагаем лучшую цену</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-slider__item-img"><img src="img/car3.png" alt="">
+            <img src="img/car3-mobile.png" alt="" class="img-mobile">
+          </div>
+
+          <div class="main-form">
+
+            <form method="post" class="form form-calculate">
+              <div class="range_val">
+                <label>
+                  <span class="input-text-range">Необходимая сумма</span>
+                  <input type="text" name="dec" class="dec9" disabled>
+                </label>
+                <div class="slider-range slider-range5"></div>
+              </div>
+
+              <div class="range_val">
+                <label>
+                  <span class="input-text-range">Срок кредита</span>
+                  <input type="text" name="dec" class="dec10" disabled>
+                </label>
+                <div class="slider-range slider-range6"></div>
+              </div>
+
+              <div class="payment-month">
+                <p>Ежемесячный платеж from</p>
+                <div class="payment-month__val">49.76</div>
+                <div class="currency">EUR</div>
+              </div>
+              <label>
+                <input type="text" placeholder="Имя и фамилия" name="name">
+              </label>
+              <label>
+                <input type="text" placeholder="Telephone" class="phone-input1" name="phone">
+              </label>
+              <button type="submit" class="btn btn-accent">fromправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<section class="steps-work m-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-30">
+        <h2>Как купить авто в лизинг?</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="steps-work-box steps-work-box1">
+          <div class="steps-work-box__img"><img src="img/step1.png" alt="">
+            <span>01</span>
+          </div>
+          <div class="steps-work-box__body">
+            <h4>Найди свою машину</h4>
+            <p>Выберете наиболее подходящий для себя автомобиль среди более 1 000 предложений from наших партнеров!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="steps-work-box steps-work-box2">
+          <div class="steps-work-box__img"><img src="img/step2.png" alt="">
+            <span>02</span>
+          </div>
+          <div class="steps-work-box__body">
+            <h4>Заполни заявку</h4>
+            <p>При регистрации необходимо указать информацию о выбранном займе и свои персональные данные. Сумма займа from 1500€</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="steps-work-box steps-work-box3">
+          <div class="steps-work-box__img"><img src="img/step3.png" alt="">
+            <span>03</span>
+          </div>
+          <div class="steps-work-box__body">
+            <h4>Заключаете договор</h4>
+            <p>Получив и ознакомившись с предложением и ежемесячным графиком платежей, заключи договор!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="steps-work-box steps-work-box4">
+          <div class="steps-work-box__img"><img src="img/step4.png" alt="">
+            <span>04</span>
+          </div>
+          <div class="steps-work-box__body">
+            <h4>Зарегистрируйте авто в CSDD</h4>
+            <p>Зарегистрируй автомобиль в CSDD и садись за руль!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="car-availability">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-40">
+        <h2>Автомобили в наличии</h2>
+      </div>
+    </div>
+
+    <div class="row car-availability-slider">
+      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+        <div class="card">
+          <a href="product.html" class="card-img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="
+		img/auto2.jpg 524w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+
+          <div class="card-body">
+            <a href="product.html" class="card-title">BMW 320</a>
+
+            <ul class="list-characteristics ul-my">
+              <li><p>5l/100km</p></li>
+              <li><p>2011</p></li>
+              <li><p>2.0 дизель</p></li>
+              <li><p>механика</p></li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-footer__item">
+                <div class="old-price">7 190 €</div>
+                <div class="new-price font-700 color-red">4 190 €</div>
+              </div>
+              <div class="card-footer__item">
+                <div class="credit-sum font-500">65 €/ мес</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+        <div class="card">
+          <a href="product.html" class="card-img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="
+		img/auto3.jpg 524w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+
+          <div class="card-body">
+            <a href="product.html" class="card-title">BMW 320</a>
+
+            <ul class="list-characteristics ul-my">
+              <li><p>5l/100km</p></li>
+              <li><p>2011</p></li>
+              <li><p>2.0 дизель</p></li>
+              <li><p>механика</p></li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-footer__item">
+                <div class="price font-700">4 190 €</div>
+              </div>
+              <div class="card-footer__item">
+                <div class="credit-sum font-500">65 €/ мес</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+        <div class="card">
+          <a href="product.html" class="card-img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="
+		img/auto4.jpg 524w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+
+          <div class="card-body">
+            <a href="product.html" class="card-title">BMW 320</a>
+
+            <ul class="list-characteristics ul-my">
+              <li><p>5l/100km</p></li>
+              <li><p>2011</p></li>
+              <li><p>2.0 дизель</p></li>
+              <li><p>механика</p></li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-footer__item">
+                <div class="price font-700">4 190 €</div>
+              </div>
+              <div class="card-footer__item">
+                <div class="credit-sum font-500">65 €/ мес</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+        <div class="card">
+          <a href="product.html" class="card-img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="
+		img/auto6.jpg 524w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+
+          <div class="card-body">
+            <a href="product.html" class="card-title">BMW 320</a>
+
+            <ul class="list-characteristics ul-my">
+              <li><p>5l/100km</p></li>
+              <li><p>2011</p></li>
+              <li><p>2.0 дизель</p></li>
+              <li><p>механика</p></li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-footer__item">
+                <div class="price font-700">4 190 €</div>
+              </div>
+              <div class="card-footer__item">
+                <div class="credit-sum font-500">65 €/ мес</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+        <div class="card">
+          <a href="product.html" class="card-img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="
+		img/auto5.jpg 524w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+
+          <div class="card-body">
+            <a href="product.html" class="card-title">BMW 320</a>
+
+            <ul class="list-characteristics ul-my">
+              <li><p>5l/100km</p></li>
+              <li><p>2011</p></li>
+              <li><p>2.0 дизель</p></li>
+              <li><p>механика</p></li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-footer__item">
+                <div class="price font-700">4 190 €</div>
+              </div>
+              <div class="card-footer__item">
+                <div class="credit-sum font-500">65 €/ мес</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 col-lg-6 order-md-1">
+        <div class="services-image"><img src="img/service-image.png" alt=""></div>
+      </div>
+      <div class="col-12 col-md-7 col-lg-6">
+        <div class="services-content">
+          <h2>Заголовок об услуге</h2>
+          <div class="box-text">
+            <p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно хороший
+              автомобиль, autoTalsi.lv поможет сделать процесс покупки ещё более простым, удобным и быстрым.
+              Сfromрудничаем только с надежными и проверенными временем партнерами, кfromорые профессионально подберут Вам
+              автомобиль среди предложенных вариантов.</p>
+            <p><strong>autoTalsi.lv</strong> Надежная и быстрая лизинговая платформа с тщательно fromобранными и
+              проверенными автомобилями
+              from партнеров.Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно
+              хороший автомобиль, autoTalsi.lv поможет сделать процесс покупки ещё более простым, удобным и быстрым.
+              Сfromрудничаем только с надежными и проверенными временем партнерами, кfromорые профессионально подберут Вам
+              автомобиль среди предложенных вариантов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages advantages-leasing">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Преимущества автолизинга</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon9.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>Бесплатная перерегистрация
+              в CSDD</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon10.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>Выгодный лизинг</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>Авто с полным баком</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon11.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>Реальная гарантия</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon12.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>€0 первый взнос</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+        <div class="advantages-box advantages-box-leasing">
+          <div class="advantages-box__icon"><img src="img/adv-icon13.svg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>Едь сейчас, плати пfromом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback bg-blue m-80">
+  <div class="container">
+    <div class="decor decor1">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor2">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor3">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <h2>Check your car leasing terms</h2>
+        <div class="box-text">
+          <p>It's free and doesn't obligate you to anything.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <form method="post" class="form-callback">
+          <label><input type="text" placeholder="Name*" name="name" required>
+          </label>
+          <label><input type="text" placeholder="Telephone" class="phone-input phone-input4" name="phone"
+                        required></label>
+          <button type="submit" class="btn btn-accent">Check terms and conditions</button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
+                href="#"
+                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-company" id="about">
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-12 col-lg-6">
+        <div class="about-company__image">
+          <div class="decor decor1">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#decor1"></use>
+            </svg>
+          </div>
+
+          <div class="decor decor2">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#decor1"></use>
+            </svg>
+          </div>
+
+          <div class="decor decor3">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#decor1"></use>
+            </svg>
+          </div>
+          <div class="decor decor4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#decor1"></use>
+            </svg>
+          </div>
+          <img src="img/about-image.png" alt="">
+          <img src="img/about-image-mobile.png" alt="" class="img-mobile">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="about-company__content">
+          <h2>О компании</h2>
+          <div class="box-text">
+            <p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно хороший
+              автомобиль, autoTalsi.lv поможет сделать процесс покупки ещё более простым, удобным и быстрым.
+              Сfromрудничаем только с надежными и проверенными временем партнерами, кfromорые профессионально подберут Вам
+              автомобиль среди предложенных вариантов.</p>
+            <p><strong>autoTalsi.lv</strong> Надежная и быстрая лизинговая платформа с тщательно fromобранными и
+              проверенными автомобилями
+              from партнеров.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <div class="about-company-advantages">
+                <div class="about-company-advantages__icon"><img src="img/adv-icon5.svg" alt=""></div>
+                <div class="about-company-advantages__text">
+                  <p>Выкупаем любой автомобиль</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="about-company-advantages">
+                <div class="about-company-advantages__icon"><img src="img/adv-icon6.svg" alt=""></div>
+                <div class="about-company-advantages__text"><p>Осмfromр и оформление за 2 часа</p></div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="about-company-advantages">
+                <div class="about-company-advantages__icon"><img src="img/adv-icon7.svg" alt=""></div>
+                <div class="about-company-advantages__text"><p>Оцениваем авто <br>дорого</p></div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="about-company-advantages">
+                <div class="about-company-advantages__icon"><img src="img/adv-icon8.svg" alt=""></div>
+                <div class="about-company-advantages__text"><p>Рабfromаем со сложными
+                  случаями (залог, арест)</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>fromзывы наших клиентов</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="reviews-slider">
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__body">
+                <h4>fromличные менеджеры!</h4>
+                <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+                  качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+              </div>
+              <div class="reviews-box__footer">
+                <div class="reviews-box__avatar">A</div>
+                <div class="reviews-box__user">
+                  <div class="name">Алексей Иванов</div>
+                  <div class="date">February 17, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__body">
+                <h4>Спасибо за помощь!</h4>
+                <p>Этfrom автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
+                  шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
+                  выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
+              </div>
+              <div class="reviews-box__footer">
+                <div class="reviews-box__avatar">Д</div>
+                <div class="reviews-box__user">
+                  <div class="name">Дмитрий Бартков</div>
+                  <div class="date">February 17, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__body">
+                <h4>Лучший автовыкуп.</h4>
+                <p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
+                  профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
+              </div>
+              <div class="reviews-box__footer">
+                <div class="reviews-box__avatar">В</div>
+                <div class="reviews-box__user">
+                  <div class="name">Виктор Куценко</div>
+                  <div class="date">February 17, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__body">
+                <h4>fromличные менеджеры!</h4>
+                <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+                  качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+              </div>
+              <div class="reviews-box__footer">
+                <div class="reviews-box__avatar">A</div>
+                <div class="reviews-box__user">
+                  <div class="name">Алексей Иванов</div>
+                  <div class="date">February 17, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__body">
+                <h4>Лучший автовыкуп.</h4>
+                <p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
+                  профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
+              </div>
+              <div class="reviews-box__footer">
+                <div class="reviews-box__avatar">В</div>
+                <div class="reviews-box__user">
+                  <div class="name">Виктор Куценко</div>
+                  <div class="date">February 17, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="question">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-40">
+        <h2>Часто задаваемые вопросы</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse1">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head" data-toggle="collapse" data-target="#collapse2">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse show" id="collapse2">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse3">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse3">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse4">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse4">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse5">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse5">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-none d-md-block">
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse6">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse6">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse7">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse7">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse8">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse8">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse9">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse9">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse10">
+            <h4>Как купить автомобиль максимально выгодно?</h4>
+            <span class="collapse-icon"></span>
+          </div>
+          <div class="question-box__body collapse" id="collapse10">
+            <p>Автомобиль будет оцениваться по-разному в зависимости from года выпуска, марки, модели и других факторов,
+              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback bg-blue m-80">
+  <div class="container">
+    <div class="decor decor1">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor2">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor3">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <h2>Check your car leasing terms</h2>
+        <div class="box-text">
+          <p>It's free and doesn't obligate you to anything.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <form method="post" class="form-callback">
+          <label><input type="text" placeholder="Name*" name="name" required>
+          </label>
+          <label><input type="text" placeholder="Telephone" class="phone-input phone-input3" name="phone"
+                        required></label>
+          <button type="submit" class="btn btn-accent">Check terms and conditions</button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
+                href="#"
+                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="interested">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Вас может заинтересовать</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="interested-slider">
+          <div class="slide">
+            <div class="interested-card">
+              <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
+              <h3>Автокредит</h3>
+              <div class="box-text">
+                <p>Подходящее решение, если планируете приобрести подержанный автомобиль.</p>
+              </div>
+
+              <a href="#" class="btn btn-accent">
+                <span class="btn-text">Подробнее</span>
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="interested-card">
+              <div class="interested-card__icon"><img src="img/about-icon2.svg" alt=""></div>
+              <h3>Страхование KASKO</h3>
+              <div class="box-text">
+                <p>Бесплатная техническая помощь, связанная с автомобилем, и гарантированное использование
+                  оригинальных запчастей при ремонте автомобилей, кfromорые не старше 5 лет.</p>
+              </div>
+
+              <a href="#" class="btn btn-accent">
+                <span class="btn-text">Подробнее</span>
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="interested-card">
+              <div class="interested-card__icon"><img src="img/about-icon3.svg" alt=""></div>
+              <h3>Страхование OCTA</h3>
+              <div class="box-text">
+                <p>Все договоры финансовых услуг в одном месте. Не надо беспокоиться о платежах, поскольку они будут
+                  осуществляться автоматически с вашего расчётного счёта.</p>
+              </div>
+
+              <a href="#" class="btn btn-accent">
+                <span class="btn-text">Подробнее</span>
+              </a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="interested-card">
+              <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
+              <h3>Автокредит</h3>
+              <div class="box-text">
+                <p>Подходящее решение, если планируете приобрести подержанный автомобиль.</p>
+              </div>
+
+              <a href="#" class="btn btn-accent">
+                <span class="btn-text">Подробнее</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-30">
+        <h2>News</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="news-card">
+          <a href="article.html" class="news-card__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/news1.jpg 526w"
+              data-src="medium"
+              class="lazyload"/></a>
+          <div class="news-card__body">
+            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной
+              альтернативой Touareg</a>
+            <div class="date">February 17, 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="news-card">
+          <a href="article.html" class="news-card__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/news2.jpg 526w"
+              data-src="medium"
+              class="lazyload"/>></a>
+          <div class="news-card__body">
+            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной
+              альтернативой Touareg</a>
+            <div class="date">February 17, 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="news-card">
+          <a href="article.html" class="news-card__img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="img/news3.jpg 526w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+          <div class="news-card__body">
+            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной
+              альтернативой Touareg</a>
+            <div class="date">February 17, 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="news-card">
+          <a href="article.html" class="news-card__img">
+            <img
+                alt=""
+                data-sizes="auto"
+                data-srcset="img/news4.jpg 526w"
+                data-src="medium"
+                class="lazyload"/>
+          </a>
+          <div class="news-card__body">
+            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной
+              альтернативой Touareg</a>
+            <div class="date">February 17, 2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="footer-top__content">
+            <div class="footer-col">
+              <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+              <div class="footer-box">
+                <h3>More on the site</h3>
+                <ul class="footer-menu ul-my">
+                  <li><a href="#">Car leasing</a></li>
+                  <li><a href="#">Buying a car</a></li>
+                  <li><a href="#">Auto partners</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-box">
+                <h3>Enterprise</h3>
+
+                <div class="address-box">
+                  <p>SIA 'RP motors' 44103127443</p>
+                  <p>Valmiera - Rīgas iela 62, LV-4201</p>
+                </div>
+
+                <ul class="list-maps ul-my">
+                  <li>
+                    <a href="#" class="list-maps-links google-link">
+                      <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
+                      <span class="list-maps-links__text">Show on map</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-maps-links waze-link">
+                      <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                      <span class="list-maps-links__text">Get directions in Waze</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-box">
+                <h3>Safety</h3>
+                <ul class="footer-menu ul-my">
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Security Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2141.745778315709!2d25.39676171603905!3d57.53374208106692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ebee7ddacb45e9%3A0xd39b13b6c12e8967!2zUsSrZ2FzIGllbGEgNjIsIFZhbG1pZXJhLCBMVi00MjAxLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sua!4v1663789538417!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" class="lazyload" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+          <p>TalsiAvto</p>
+          <div class="copyright">© 2021. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Leave a request</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>We will contact you shortly</p>
+        </div>
+        <form class="form-modal">
+          <label>
+            <input type="text" placeholder="Name*" name="name">
+          </label>
+          <label><input type="text" placeholder="Telephone" class="phone-input phone-input5" name="phone"></label>
+
+          <button type="submit" class="btn btn-accent"><span class="btn-text">pick up a car</span></button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
+                href="#"
+                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I want to receive marketing offers</span>
+          </label>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Application sent!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Thank you! Our specialist will contact you by phone shortly to clarify the details.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Модальное окно -->
+<div class="modal fade" id="thanks-successModal" tabindex="-1" aria-labelledby="thanks-successModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Способ связи сохранен</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+
+        <a href="index.html" class="btn btn-accent">Home</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/intlTelInput.js"></script>
+<script src="js/fileup.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

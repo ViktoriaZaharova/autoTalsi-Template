@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>AutoTalsi</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256"/>
+  <link rel="apple-touch-icon" href="img/favicon/favicon.ico"/>
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="overlay-mobile"></div>
+<div class="mobile-search mobile-wrapper">
+  <div class="sidebar-head">
+    <h2>pick up a car</h2>
+    <div class="sidebar-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="sidebar-body">
+    <form method="post" class="form-search">
+      <label>
+        <input type="text" placeholder="Поиск по сайту" name="search">
+      </label>
+    </form>
+
+    <div class="sidebar-box">
+      <h4>Brand</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="All">All</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Model</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="All">All</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Year of issue</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">from</span>
+            <input type="text" name="dec" class="dec5">
+          </label>
+          <label>
+            <span class="range_val-text">to</span>
+            <input type="text" name="dec" class="dec6">
+          </label>
+        </div>
+        <div class="slider-range slider-range3"></div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
+          aria-controls="collapseItem4">Transmission</h4>
+      <div class="collapse" id="collapseItem4">
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Machine">Machine</option>
+              <option value="Mechanics">Mechanics</option>
+              <option value="Robot">Robot</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
+          aria-controls="collapseItem5">Body type</h4>
+      <div class="collapse" id="collapseItem5">
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Sedan">Sedan</option>
+              <option value="Station wagon">Station wagon</option>
+              <option value="Coupe">Coupe</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Price</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">from</span>
+            <input type="text" name="dec" class="dec7">
+          </label>
+          <label>
+            <span class="range_val-text">to</span>
+            <input type="text" name="dec" class="dec8">
+          </label>
+        </div>
+        <div class="slider-range slider-range4"></div>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+  </div>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="#" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+
+          <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <!--          <form method="post" class="form-search-mobile">-->
+          <!--            <label>-->
+          <!--              <input type="text" placeholder="Поиск..." name="search">-->
+          <!--            </label>-->
+          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+          <!--          </form>-->
+
+          <a href="#" class="btn-search-mobile">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+
+          <ul class="list-language ul-my">
+            <li><a href="#">LAT</a></li>
+            <li><a href="#" class="active">RUS</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+
+
+          <div class="schedule-box header-box">
+            <p>Operating mode:</p>
+            <span>I: 00 - 22:00</span>
+          </div>
+
+          <div class="header-box">
+            <p>E-mail:</p>
+            <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+          </div>
+
+
+          <div class="header-box header-contacts-box">
+            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+            <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for leasing</a>
+
+            <a href="tel:+37126612612" class="icon-phone">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <nav class="nav-menu">
+
+            <ul class="menu ul-my">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места рабfromы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                          <li><a href="#">Leasing without down payment</a></li>
+                          <li><a href="#">Leasing without an official place of work</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="auto-partners.html">Auto partners</a></li>
+              <li><a href="buying.html" class="active">Buying a car</a></li>
+              <li><a href="#about" class="go_to">About Us</a></li>
+              <li><a href="news.html">News </a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <ul class="list-language ul-my">
+              <li><a href="#">LAT</a></li>
+              <li><a href="#" class="active">RUS</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+
+            <div class="schedule-box header-box">
+              <p>Operating mode:</p>
+              <span>I: 00 - 22:00</span>
+            </div>
+
+            <div class="header-box">
+              <p>E-mail:</p>
+              <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="page page-contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="breadcrumbs ul-my">
+          <li><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
+          <li><span>Contacts</span></li>
+        </ul>
+      </div>
+
+      <div class="col-12">
+        <h1>Контактная информация</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-3 mb-20">
+        <div class="page-contacts-box">
+          <div class="page-contacts-box__icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </div>
+          <div class="page-contacts-box__body">
+            <h3>Telephone:</h3>
+            <a href="tel:+37126612612" class="phone">+ 371 26-612-612</a>
+          </div>
+        </div>
+        <div class="page-contacts-box">
+          <div class="page-contacts-box__icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+          </div>
+          <div class="page-contacts-box__body">
+            <h3>E-mail:</h3>
+            <a href="mailto:info@manslizings.lv" class="mail">info@manslizings.lv</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 mb-20 d-flex flex-wrap">
+        <div class="page-contacts-box page-contacts-box-address">
+          <div class="page-contacts-box__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#location"></use></svg></div>
+          <h3>Адрес офиса:</h3>
+          <div class="page-contacts-box__body"><p>Maskavas iela 418, Latgales priekšpilsēta, Rīga, LV-1063, Латвия</p></div>
+        </div>
+        <ul class="list-maps ul-my">
+          <li>
+            <a href="#" class="list-maps-links google-link">
+              <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
+              <span class="list-maps-links__text">Show on map</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="list-maps-links waze-link">
+              <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+              <span class="list-maps-links__text">Get directions in Waze</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-contacts-box page-contacts-box-schedule">
+          <div class="page-contacts-box__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#clock"></use></svg></div>
+          <h3>Часы рабfromы:</h3>
+          <div class="page-contacts-box__body">
+            <p>Пн- Пт с 9:00 до 18:00</p>
+            <p>Сб, Вс : Выходной</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contacts-map">
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2141.745778315709!2d25.39676171603905!3d57.53374208106692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ebee7ddacb45e9%3A0xd39b13b6c12e8967!2zUsSrZ2FzIGllbGEgNjIsIFZhbG1pZXJhLCBMVi00MjAxLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sua!4v1663789538417!5m2!1sru!2sua"
+          style="border:0;" allowfullscreen="" class="lazyload" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="requisites">
+      <div class="requisites-head">
+        <h4>Реквизиты компании</h4>
+      </div>
+      <div class="requisites-body">
+        <ul class="list-requisites ul-my">
+          <li>
+            <p>Полное наименование организации</p>
+            <span>Общество с ограниченной fromветственностью «Весна»</span>
+          </li>
+          <li>
+            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+            <span>123456, г. Москва, ул. Подвойского, д. 14, стр. 7</span>
+          </li>
+          <li>
+            <p>Почтовый адрес</p>
+            <span>123456, г. Москва, ул. Подвойского, д. 14, стр. 7</span>
+          </li>
+          <li>
+            <p>ИНН</p>
+            <span>0105650606</span>
+          </li>
+          <li>
+            <p>КПП</p>
+            <span>04065066</span>
+          </li>
+          <li>
+            <p>БИК</p>
+            <span>05588665</span>
+          </li>
+          <li>
+            <p>Р/С</p>
+            <span>40702810123450101230</span>
+          </li>
+          <li>
+            <p>К/С</p>
+            <span>30101234500000000225</span>
+          </li>
+        </ul>
+        <ul class="list-requisites ul-my">
+          <li>
+            <p>ОКПО</p>
+            <span>12345678</span>
+          </li>
+          <li>
+            <p>ОКАТО</p>
+            <span>87654321000</span>
+          </li>
+          <li>
+            <p>ОКВЭД (основной)</p>
+            <span>18.15</span>
+          </li>
+          <li>
+            <p>ОГРН</p>
+            <span>1047712345678</span>
+          </li>
+          <li>
+            <p>Генеральный директор</p>
+            <span>Петров Сергей Петрович</span>
+          </li>
+          <li>
+            <p>Электронная почта</p>
+            <span>info@manslizings.lv</span>
+          </li>
+          <li>
+            <p>Telephone</p>
+            <span>+ 371 26-612-612</span>
+          </li>
+          <li>
+            <p>Сайт</p>
+            <span>manslizings.lv</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
+        <h2>Подписывайтесь на нас в соцсетях:</h2>
+
+        <ul class="list-social ul-my">
+          <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback bg-blue">
+  <div class="container">
+    <div class="decor decor1">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor2">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="decor decor3">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#decor1"></use>
+      </svg>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <h2>Check your car leasing terms</h2>
+        <div class="box-text">
+          <p>It's free and doesn't obligate you to anything.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <form method="post" class="form-callback">
+          <label><input type="text" placeholder="Name*" name="name" required></label>
+          <label><input type="text" placeholder="Telephone" class="phone-input phone-input1" name="phone" required></label>
+          <button type="submit" class="btn btn-accent">Check terms and conditions</button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
+                href="#"
+                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="footer-top__content">
+            <div class="footer-col">
+              <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+              <div class="footer-box">
+                <h3>More on the site</h3>
+                <ul class="footer-menu ul-my">
+                  <li><a href="#">Car leasing</a></li>
+                  <li><a href="#">Buying a car</a></li>
+                  <li><a href="#">Auto partners</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-box">
+                <h3>Enterprise</h3>
+
+                <div class="address-box">
+                  <p>SIA 'RP motors' 44103127443</p>
+                  <p>Valmiera - Rīgas iela 62, LV-4201</p>
+                </div>
+
+                <ul class="list-maps ul-my">
+                  <li>
+                    <a href="#" class="list-maps-links google-link">
+                      <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
+                      <span class="list-maps-links__text">Show on map</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-maps-links waze-link">
+                      <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                      <span class="list-maps-links__text">Get directions in Waze</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-box">
+                <h3>Safety</h3>
+                <ul class="footer-menu ul-my">
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Security Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2141.745778315709!2d25.39676171603905!3d57.53374208106692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ebee7ddacb45e9%3A0xd39b13b6c12e8967!2zUsSrZ2FzIGllbGEgNjIsIFZhbG1pZXJhLCBMVi00MjAxLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sua!4v1663789538417!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" class="lazyload" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+          <p>TalsiAvto</p>
+          <div class="copyright">© 2021. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Leave a request</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>We will contact you shortly</p>
+        </div>
+        <form class="form-modal">
+          <label>
+            <input type="text" placeholder="Name*" name="name">
+          </label>
+          <label><input type="text" placeholder="Telephone" class="phone-input phone-input5" name="phone"></label>
+
+          <button type="submit" class="btn btn-accent"><span class="btn-text">pick up a car</span></button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
+                href="#"
+                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">I want to receive marketing offers</span>
+          </label>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Application sent!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Thank you! Our specialist will contact you by phone shortly to clarify the details.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/intlTelInput.js"></script>
+<script src="js/fileup.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/common.js"></script>
+
+
+</body>
+</html>
