@@ -203,10 +203,10 @@ $('.slider-range6').slider({
     },
     slide: function (event, ui) {
         //Поле минимального значения
-        $(".dec10").val(ui.value + ' ' + 'мес.');
+        $(".dec10").val(ui.value + ' ' + 'months');
     }
 });
-$(".dec10").val($(".slider-range6").slider("value") + ' ' + 'мес.');
+$(".dec10").val($(".slider-range6").slider("value") + ' ' + 'months');
 
 
 $('.interested-slider').slick({

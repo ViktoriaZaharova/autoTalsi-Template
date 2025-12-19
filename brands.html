@@ -42,330 +42,145 @@
 
 <body>
 
-<div class="overlay-mobile"></div>
-<div class="mobile-search mobile-wrapper">
-  <div class="sidebar-head">
-    <h2>pick up a car</h2>
-    <div class="sidebar-close">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#close"></use>
-      </svg>
-    </div>
-  </div>
+ <div class="overlay-mobile"></div>
 
-  <div class="sidebar-body">
-    <form method="post" class="form-search">
-      <label>
-        <input type="text" placeholder="Поиск по сайту" name="search">
-      </label>
-    </form>
-
-    <div class="sidebar-box">
-      <h4>Brand</h4>
-      <label>
-        <select name="select" class="select-my">
-          <option value="All">All</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="sidebar-box">
-      <h4>Model</h4>
-      <label>
-        <select name="select" class="select-my">
-          <option value="All">All</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="sidebar-box">
-      <h4>Year of issue</h4>
-      <div class="range_val">
-        <div class="form-group">
-          <label>
-            <span class="range_val-text">from</span>
-            <input type="text" name="dec" class="dec5">
-          </label>
-          <label>
-            <span class="range_val-text">to</span>
-            <input type="text" name="dec" class="dec6">
-          </label>
-        </div>
-        <div class="slider-range slider-range3"></div>
+  <div class="mobile-search mobile-wrapper">
+    <div class="sidebar-head">
+      <h2>pick up a car</h2>
+      <div class="sidebar-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
     </div>
 
-    <div class="sidebar-box">
-      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
+    <div class="sidebar-body">
+      <form method="post" class="form-search">
+        <label>
+          <input type="text" placeholder="Поиск по сайту" name="search">
+        </label>
+      </form>
+
+      <div class="sidebar-box">
+        <h4>Brand</h4>
+        <label>
+          <select name="select" class="select-my">
+            <option value="All">All</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>Model</h4>
+        <label>
+          <select name="select" class="select-my">
+            <option value="All">All</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>Year of issue</h4>
+        <div class="range_val">
+          <div class="form-group">
+            <label>
+              <span class="range_val-text">from</span>
+              <input type="text" name="dec" class="dec5">
+            </label>
+            <label>
+              <span class="range_val-text">to</span>
+              <input type="text" name="dec" class="dec6">
+            </label>
+          </div>
+          <div class="slider-range slider-range3"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
           aria-controls="collapseItem4">Transmission</h4>
-      <div class="collapse" id="collapseItem4">
-        <div class="sidebar-box__body">
-          <label>
-            <select name="select" class="select-my">
-              <option value="Machine">Machine</option>
-              <option value="Mechanics">Mechanics</option>
-              <option value="Robot">Robot</option>
-            </select>
-          </label>
+        <div class="collapse" id="collapseItem4">
+          <div class="sidebar-box__body">
+            <label>
+              <select name="select" class="select-my">
+                <option value="Machine">Machine</option>
+                <option value="Mechanics">Mechanics</option>
+                <option value="Robot">Robot</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="sidebar-box">
-      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
+      <div class="sidebar-box">
+        <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
           aria-controls="collapseItem5">Body type</h4>
-      <div class="collapse" id="collapseItem5">
-        <div class="sidebar-box__body">
-          <label>
-            <select name="select" class="select-my">
-              <option value="Sedan">Sedan</option>
-              <option value="Station wagon">Station wagon</option>
-              <option value="Coupe">Coupe</option>
-            </select>
-          </label>
+        <div class="collapse" id="collapseItem5">
+          <div class="sidebar-box__body">
+            <label>
+              <select name="select" class="select-my">
+                <option value="Sedan">Sedan</option>
+                <option value="Station wagon">Station wagon</option>
+                <option value="Coupe">Coupe</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="sidebar-box">
-      <h4>Price</h4>
-      <div class="range_val">
-        <div class="form-group">
-          <label>
-            <span class="range_val-text">from</span>
-            <input type="text" name="dec" class="dec7">
-          </label>
-          <label>
-            <span class="range_val-text">to</span>
-            <input type="text" name="dec" class="dec8">
-          </label>
+      <div class="sidebar-box">
+        <h4>Price</h4>
+        <div class="range_val">
+          <div class="form-group">
+            <label>
+              <span class="range_val-text">from</span>
+              <input type="text" name="dec" class="dec7">
+            </label>
+            <label>
+              <span class="range_val-text">to</span>
+              <input type="text" name="dec" class="dec8">
+            </label>
+          </div>
+          <div class="slider-range slider-range4"></div>
         </div>
-        <div class="slider-range slider-range4"></div>
       </div>
-    </div>
 
-    <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+      <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+    </div>
   </div>
-</div>
 
-<header>
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="#" class="btn-search">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </a>
-
-          <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
-
-          <!--          <form method="post" class="form-search-mobile">-->
-          <!--            <label>-->
-          <!--              <input type="text" placeholder="Поиск..." name="search">-->
-          <!--            </label>-->
-          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
-          <!--          </form>-->
-
-          <a href="#" class="btn-search-mobile">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </a>
-
-          <ul class="list-language ul-my">
-            <li><a href="#">LAT</a></li>
-            <li><a href="#" class="active">RUS</a></li>
-            <li><a href="#">ENG</a></li>
-          </ul>
-
-
-          <div class="schedule-box header-box">
-            <p>Operating mode:</p>
-            <span>I: 00 - 22:00</span>
-          </div>
-
-          <div class="header-box">
-            <p>E-mail:</p>
-            <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
-          </div>
-
-
-          <div class="header-box header-contacts-box">
-            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-            <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for leasing</a>
-
-            <a href="tel:+37126612612" class="icon-phone">
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="#" class="btn-search">
               <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite.svg#search"></use>
               </svg>
             </a>
-          </div>
 
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
 
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-          <nav class="nav-menu">
+            <!--          <form method="post" class="form-search-mobile">-->
+            <!--            <label>-->
+            <!--              <input type="text" placeholder="Поиск..." name="search">-->
+            <!--            </label>-->
+            <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+            <!--          </form>-->
 
-            <ul class="menu ul-my">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
-                <div class="dropdown-menu">
-                  <ul class="dropdown-menu-list ul-my">
-                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
-                <div class="dropdown-menu">
-                  <ul class="dropdown-menu-list ul-my">
-                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="auto-partners.html">Auto partners</a></li>
-              <li><a href="buying.html" class="active">Buying a car</a></li>
-              <li><a href="#about" class="go_to">About Us</a></li>
-              <li><a href="news.html">News </a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
+            <a href="#" class="btn-search-mobile">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
 
             <ul class="list-language ul-my">
               <li><a href="#">LAT</a></li>
               <li><a href="#" class="active">RUS</a></li>
               <li><a href="#">ENG</a></li>
             </ul>
+
 
             <div class="schedule-box header-box">
               <p>Operating mode:</p>
@@ -377,12 +192,199 @@
               <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
             </div>
 
-          </nav>
+
+            <div class="header-box header-contacts-box">
+              <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+              <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for
+                leasing</a>
+
+              <a href="tel:+37126612612" class="icon-phone">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-wrap">
+            <nav class="nav-menu">
+
+              <ul class="menu ul-my">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
+                  <div class="dropdown-menu">
+                    <ul class="dropdown-menu-list ul-my">
+                      <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Leasing
+                          without an official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
+                  <div class="dropdown-menu">
+                    <ul class="dropdown-menu-list ul-my">
+                      <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Leasing
+                          without an official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="auto-partners.html">Auto partners</a></li>
+                <li><a href="buying.html" class="active">Buying a car</a></li>
+                <li><a href="#about" class="go_to">About Us</a></li>
+                <li><a href="news.html">News </a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+
+              <ul class="list-language ul-my">
+                <li><a href="#">LAT</a></li>
+                <li><a href="#" class="active">RUS</a></li>
+                <li><a href="#">ENG</a></li>
+              </ul>
+
+              <div class="schedule-box header-box">
+                <p>Operating mode:</p>
+                <span>I: 00 - 22:00</span>
+              </div>
+
+              <div class="header-box">
+                <p>E-mail:</p>
+                <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+              </div>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 <section class="page page-product page-news page-brands">
   <div class="container">
