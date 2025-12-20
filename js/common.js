@@ -463,7 +463,7 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 $('.sidebar .sidebar-box').each(function () {
     if ($(this).find('ul li').length > 5) {
         $(this).find('ul li').slice(5).hide();
-        $(this).find('.sidebar-box__body').append('<a href="#" class="color-accent load-more-wrap">Показать все</a>');
+        $(this).find('.sidebar-box__body').append('<a href="#" class="color-accent load-more-wrap">Show all</a>');
     }
 
 });

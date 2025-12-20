@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -9,9 +9,9 @@
 
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
-  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256"/>
-  <link rel="apple-touch-icon" href="img/favicon/favicon.ico"/>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256" />
+  <link rel="apple-touch-icon" href="img/favicon/favicon.ico" />
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#000">
@@ -21,9 +21,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/fileup.min.css">
@@ -42,330 +42,145 @@
 
 <body>
 
-<div class="overlay-mobile"></div>
-<div class="mobile-search mobile-wrapper">
-  <div class="sidebar-head">
-    <h2>pick up a car</h2>
-    <div class="sidebar-close">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#close"></use>
-      </svg>
-    </div>
-  </div>
+  <div class="overlay-mobile"></div>
 
-  <div class="sidebar-body">
-    <form method="post" class="form-search">
-      <label>
-        <input type="text" placeholder="Поиск по сайту" name="search">
-      </label>
-    </form>
-
-    <div class="sidebar-box">
-      <h4>Brand</h4>
-      <label>
-        <select name="select" class="select-my">
-          <option value="All">All</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="sidebar-box">
-      <h4>Model</h4>
-      <label>
-        <select name="select" class="select-my">
-          <option value="All">All</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="sidebar-box">
-      <h4>Year of issue</h4>
-      <div class="range_val">
-        <div class="form-group">
-          <label>
-            <span class="range_val-text">from</span>
-            <input type="text" name="dec" class="dec5">
-          </label>
-          <label>
-            <span class="range_val-text">to</span>
-            <input type="text" name="dec" class="dec6">
-          </label>
-        </div>
-        <div class="slider-range slider-range3"></div>
+  <div class="mobile-search mobile-wrapper">
+    <div class="sidebar-head">
+      <h2>pick up a car</h2>
+      <div class="sidebar-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
     </div>
 
-    <div class="sidebar-box">
-      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
+    <div class="sidebar-body">
+      <form method="post" class="form-search">
+        <label>
+          <input type="text" placeholder="Поиск по сайту" name="search">
+        </label>
+      </form>
+
+      <div class="sidebar-box">
+        <h4>Brand</h4>
+        <label>
+          <select name="select" class="select-my">
+            <option value="All">All</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>Model</h4>
+        <label>
+          <select name="select" class="select-my">
+            <option value="All">All</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>Year of issue</h4>
+        <div class="range_val">
+          <div class="form-group">
+            <label>
+              <span class="range_val-text">from</span>
+              <input type="text" name="dec" class="dec5">
+            </label>
+            <label>
+              <span class="range_val-text">to</span>
+              <input type="text" name="dec" class="dec6">
+            </label>
+          </div>
+          <div class="slider-range slider-range3"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
           aria-controls="collapseItem4">Transmission</h4>
-      <div class="collapse" id="collapseItem4">
-        <div class="sidebar-box__body">
-          <label>
-            <select name="select" class="select-my">
-              <option value="Machine">Machine</option>
-              <option value="Mechanics">Mechanics</option>
-              <option value="Robot">Robot</option>
-            </select>
-          </label>
+        <div class="collapse" id="collapseItem4">
+          <div class="sidebar-box__body">
+            <label>
+              <select name="select" class="select-my">
+                <option value="Machine">Machine</option>
+                <option value="Mechanics">Mechanics</option>
+                <option value="Robot">Robot</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="sidebar-box">
-      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
+      <div class="sidebar-box">
+        <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
           aria-controls="collapseItem5">Body type</h4>
-      <div class="collapse" id="collapseItem5">
-        <div class="sidebar-box__body">
-          <label>
-            <select name="select" class="select-my">
-              <option value="Sedan">Sedan</option>
-              <option value="Station wagon">Station wagon</option>
-              <option value="Coupe">Coupe</option>
-            </select>
-          </label>
+        <div class="collapse" id="collapseItem5">
+          <div class="sidebar-box__body">
+            <label>
+              <select name="select" class="select-my">
+                <option value="Sedan">Sedan</option>
+                <option value="Station wagon">Station wagon</option>
+                <option value="Coupe">Coupe</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="sidebar-box">
-      <h4>Price</h4>
-      <div class="range_val">
-        <div class="form-group">
-          <label>
-            <span class="range_val-text">from</span>
-            <input type="text" name="dec" class="dec7">
-          </label>
-          <label>
-            <span class="range_val-text">to</span>
-            <input type="text" name="dec" class="dec8">
-          </label>
+      <div class="sidebar-box">
+        <h4>Price</h4>
+        <div class="range_val">
+          <div class="form-group">
+            <label>
+              <span class="range_val-text">from</span>
+              <input type="text" name="dec" class="dec7">
+            </label>
+            <label>
+              <span class="range_val-text">to</span>
+              <input type="text" name="dec" class="dec8">
+            </label>
+          </div>
+          <div class="slider-range slider-range4"></div>
         </div>
-        <div class="slider-range slider-range4"></div>
       </div>
-    </div>
 
-    <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+      <a href="#" class="btn btn-accent btn-sidebar-submit">pick up a car</a>
+    </div>
   </div>
-</div>
 
-<header>
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="#" class="btn-search">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </a>
-
-          <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
-
-<!--          <form method="post" class="form-search-mobile">-->
-<!--            <label>-->
-<!--              <input type="text" placeholder="Поиск..." name="search">-->
-<!--            </label>-->
-<!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
-<!--          </form>-->
-
-          <a href="#" class="btn-search-mobile">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </a>
-
-          <ul class="list-language ul-my">
-            <li><a href="#">LAT</a></li>
-            <li><a href="#" class="active">RUS</a></li>
-            <li><a href="#">ENG</a></li>
-          </ul>
-
-
-          <div class="schedule-box header-box">
-            <p>Operating mode:</p>
-            <span>I: 00 - 22:00</span>
-          </div>
-
-          <div class="header-box">
-            <p>E-mail:</p>
-            <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
-          </div>
-
-
-          <div class="header-box header-contacts-box">
-            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-            <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for leasing</a>
-
-            <a href="tel:+37126612612" class="icon-phone">
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="#" class="btn-search">
               <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite.svg#search"></use>
               </svg>
             </a>
-          </div>
 
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
 
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-          <nav class="nav-menu">
+            <!--          <form method="post" class="form-search-mobile">-->
+            <!--            <label>-->
+            <!--              <input type="text" placeholder="Поиск..." name="search">-->
+            <!--            </label>-->
+            <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+            <!--          </form>-->
 
-            <ul class="menu ul-my">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
-                <div class="dropdown-menu">
-                  <ul class="dropdown-menu-list ul-my">
-                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
-                <div class="dropdown-menu">
-                  <ul class="dropdown-menu-list ul-my">
-                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
-                      взноса</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
-                      официального места рабfromы</a>
-                      <div class="dropdown-menu">
-                        <ul class="dropdown-menu-list ul-my">
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                          <li><a href="#">Leasing without down payment</a></li>
-                          <li><a href="#">Leasing without an official place of work</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="auto-partners.html">Auto partners</a></li>
-              <li><a href="buying.html" class="active">Buying a car</a></li>
-              <li><a href="#about" class="go_to">About Us</a></li>
-              <li><a href="news.html">News </a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
+            <a href="#" class="btn-search-mobile">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
 
             <ul class="list-language ul-my">
               <li><a href="#">LAT</a></li>
               <li><a href="#" class="active">RUS</a></li>
               <li><a href="#">ENG</a></li>
             </ul>
+
 
             <div class="schedule-box header-box">
               <p>Operating mode:</p>
@@ -377,1034 +192,1224 @@
               <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
             </div>
 
-          </nav>
+
+            <div class="header-box header-contacts-box">
+              <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+              <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Apply for
+                leasing</a>
+
+              <a href="tel:+37126612612" class="icon-phone">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
 
-<main class="home">
-  <div class="main-slider w-100">
-    <div class="slide">
-      <div class="main-slider__item">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex flex-wrap">
-              <div class="main-content">
-                <h1>Подержанные авто
-                  <strong class="color-orange">с гарантией</strong></h1>
-                <div class="box-text">
-                  <ul class="list-dots ul-my font-700">
-                    <li>0€ первый взнос</li>
-                    <li>Real guarantee</li>
-                    <li>Полный бак</li>
-                    <li>Profitable leasing</li>
-                  </ul>
-                </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-wrap">
+            <nav class="nav-menu">
 
-                <a href="catalog.html" class="btn btn-accent"><span class="btn-text">Выбрать авто</span></a>
+              <ul class="menu ul-my">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Car leasing</a>
+                  <div class="dropdown-menu">
+                    <ul class="dropdown-menu-list ul-my">
+                      <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Leasing
+                          without an official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Car loan</a>
+                  <div class="dropdown-menu">
+                    <ul class="dropdown-menu-list ul-my">
+                      <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Leasing
+                          without an official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without
+                          down payment</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leasing without an
+                          official place of work</a>
+                        <div class="dropdown-menu">
+                          <ul class="dropdown-menu-list ul-my">
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                            <li><a href="#">Leasing without down payment</a></li>
+                            <li><a href="#">Leasing without an official place of work</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="auto-partners.html">Auto partners</a></li>
+                <li><a href="buying.html" class="active">Buying a car</a></li>
+                <li><a href="#about" class="go_to">About Us</a></li>
+                <li><a href="news.html">News </a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+
+              <ul class="list-language ul-my">
+                <li><a href="#">LAT</a></li>
+                <li><a href="#" class="active">RUS</a></li>
+                <li><a href="#">ENG</a></li>
+              </ul>
+
+              <div class="schedule-box header-box">
+                <p>Operating mode:</p>
+                <span>I: 00 - 22:00</span>
               </div>
-              <div class="main-slider__item-img">
-<!--                <img-->
-<!--                    alt=""-->
-<!--                    data-sizes="auto"-->
-<!--                    data-srcset="img/car1-mobile.png 360w, img/car1.png 1336w"-->
-<!--                    data-src="img/car1.png"-->
-<!--                    class="lazyload"/>-->
-                <img src="img/car1.png" alt="">
+
+              <div class="header-box">
+                <p>E-mail:</p>
+                <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
+              </div>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home">
+    <div class="main-slider w-100">
+      <div class="slide">
+        <div class="main-slider__item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex flex-wrap">
+                <div class="main-content">
+                  <h1>Used cars
+                    <strong class="color-orange">with guarantee</strong>
+                  </h1>
+                  <div class="box-text">
+                    <ul class="list-dots ul-my font-700">
+                      <li>0€ down payment</li>
+                      <li>Real guarantee</li>
+                      <li>Full tank</li>
+                      <li>Profitable leasing</li>
+                    </ul>
+                  </div>
+
+                  <a href="catalog.html" class="btn btn-accent"><span class="btn-text">Select car</span></a>
+                </div>
+                <div class="main-slider__item-img">
+                  <img src="img/car1.png" alt="">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
 
-<section class="catalog-car">
+  <section class="catalog-car">
 
-  <div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
 
-      <div class="col-12">
-        <div class="filter-wrapper">
-          <h2>pick up a car</h2>
+        <div class="col-12">
+          <div class="filter-wrapper">
+            <h2>pick up a car</h2>
 
-          <form method="post" class="form-filter">
-            <label class="label-mark">
-              <select name="select" class="select-my">
-                <option value="Brand">Brand</option>
-                <option value="Mersedes">Mersedes</option>
-                <option value="Mersedes">Mersedes</option>
-              </select>
-            </label>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Model">Model</option>
-                <option value="Model">Model</option>
-                <option value="Model">Model</option>
-              </select>
-            </label>
+            <form method="post" class="form-filter">
+              <label class="label-mark">
+                <select name="select" class="select-my">
+                  <option value="Brand">Brand</option>
+                  <option value="Mersedes">Mersedes</option>
+                  <option value="Mersedes">Mersedes</option>
+                </select>
+              </label>
+              <label>
+                <select name="select" class="select-my">
+                  <option value="Model">Model</option>
+                  <option value="Model">Model</option>
+                  <option value="Model">Model</option>
+                </select>
+              </label>
 
-            <div class="range_val">
-              <div class="form-group">
-                <label>
-                  <span class="range_val-text">Price,  from</span>
-                  <input type="text" name="dec" class="dec1">
-                </label>
-                <label>
-                  <span class="range_val-text">Price,  до</span>
-                  <input type="text" name="dec" class="dec2">
-                </label>
+              <div class="range_val">
+                <div class="form-group">
+                  <label>
+                    <span class="range_val-text">Price, from</span>
+                    <input type="text" name="dec" class="dec1">
+                  </label>
+                  <label>
+                    <span class="range_val-text">Price, up to</span>
+                    <input type="text" name="dec" class="dec2">
+                  </label>
+                </div>
+                <div class="slider-range slider-range1"></div>
               </div>
-              <div class="slider-range slider-range1"></div>
+
+
+              <button type="submit" class="btn btn-accent">
+                <span class="btn-text">pick up a car</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-40 align-items-center">
+        <div class="col-12 col-lg-5">
+          <h2>Car catalog: </h2>
+        </div>
+
+        <div class="col-12 col-lg-7 d-flex flex-wrap align-items-center">
+          <ul class="list-tags ul-my">
+            <li><a href="#" class="bg-orange">Coming soon</a></li>
+            <li><a href="#" class="bg-red">Promotion</a></li>
+          </ul>
+          <div class="all-models-result">Total in the catalog: 298 models</div>
+        </div>
+      </div>
+
+      <div class="row catalog-car-row">
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto1.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <ul class="label-list">
+              <li class="label-list__item bg-red">-1500 €</li>
+            </ul>
+
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto2.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="old-price">7 190 €</div>
+                  <div class="new-price font-700 color-red">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto3.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto4.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto5.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto6.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto7.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto8.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto9.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto10.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto11.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+          <div class="card">
+            <a href="product.html" class="card-img">
+              <img alt="" data-sizes="auto" data-srcset="
+		img/auto12.jpg 524w" data-src="medium" class="lazyload" />
+            </a>
+
+            <div class="card-body">
+              <a href="product.html" class="card-title">BMW 320</a>
+
+              <ul class="list-characteristics ul-my">
+                <li>
+                  <p>5l/100km</p>
+                </li>
+                <li>
+                  <p>2011</p>
+                </li>
+                <li>
+                  <p>2.0 diesel</p>
+                </li>
+                <li>
+                  <p>mechanics</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-footer__item">
+                  <div class="price font-700">4 190 €</div>
+                </div>
+                <div class="card-footer__item">
+                  <div class="credit-sum font-500">65 €/month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <a href="catalog.html" class="btn btn-accent btn-toggle">
+            <span class="btn-text">Go to catalog</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="professional">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="professional-image">
+            <div class="decor decor1">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
             </div>
 
+            <div class="decor decor2">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
 
-            <button type="submit" class="btn btn-accent">
-              <span class="btn-text">pick up a car</span>
-            </button>
+            <div class="decor decor3">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
 
+            <img src="img/professional-image.jpg" alt="">
+            <img src="img/professional-image-mobile.png" class="img-mobile" alt="">
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="professional-content">
+            <h2>Professionally selecting cars since 2007</h2>
+            <div class="box-text">
+              <p>And some other features of domestic policy represent nothing less than the quintessence of the victory of marketing over reason and should be transformed:</p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-5">
+                <ul class="list-decor ul-my">
+                  <li>Save time</li>
+                  <li>Availability</li>
+                  <li>Safety data</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6">
+                <ul class="list-decor ul-my">
+                  <li>Wide selection of cars</li>
+                  <li>Convenient design</li>
+                  <li>Individual approach</li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-border-accent">more details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages m-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Start your journey in a new car!</h2>
+        </div>
+      </div>
+      <div class="row advantages-wrapper">
+        <div class="col-6 col-md-3">
+          <div class="advantages-box">
+            <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+            <div class="advantages-box__body">
+              <p>With a full tank after purchases</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="advantages-box">
+            <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+            <div class="advantages-box__body">
+              <p>with guarantee
+                up to 3 months</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="advantages-box">
+            <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+            <div class="advantages-box__body">
+              <p>With new winter tires</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="advantages-box">
+            <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+            <div class="advantages-box__body">
+              <p>Despite a bad credit history</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interested">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>You may be interested in</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="interested-slider">
+            <div class="slide">
+              <div class="interested-card">
+                <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
+                <h3>Car loan</h3>
+                <div class="box-text">
+                  <p>A suitable solution if you are planning to buy a used car.</p>
+                </div>
+
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">More details</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="interested-card">
+                <div class="interested-card__icon"><img src="img/about-icon2.svg" alt=""></div>
+                <h3>CASCO insurance</h3>
+                <div class="box-text">
+                  <p>Free vehicle-related technical assistance and guaranteed use of original spare parts for repairs on
+                    vehicles up to 5 years old.</p>
+                </div>
+
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">More details</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="interested-card">
+                <div class="interested-card__icon"><img src="img/about-icon3.svg" alt=""></div>
+                <h3>OCTA Insurance</h3>
+                <div class="box-text">
+                  <p>All your financial services contracts in one place. No need to worry about payments, as they will
+                    be processed automatically from your bank account.</p>
+                </div>
+
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">More details</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="interested-card">
+                <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
+                <h3>Car loan</h3>
+                <div class="box-text">
+                  <p>A suitable solution if you are planning to buy a used car.</p>
+                </div>
+
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">More details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Available car brands</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="brands-slider">
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand2.png 1280w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand1.png 1836w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand3.png 3139w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand4.png 960w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand5.png 4096w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand2.png 1280w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="brand-page.html" class="brand-item">
+                <span class="brand-item__img"><img alt="" data-sizes="auto" data-srcset="img/brand1.png 1836w"
+                    data-src="medium" class="lazyload" /></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <a href="brands.html" class="btn btn-border-accent">see all</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-company" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="about-company__image">
+            <div class="decor decor1">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
+
+            <div class="decor decor2">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
+
+            <div class="decor decor3">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
+            <div class="decor decor4">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#decor1"></use>
+              </svg>
+            </div>
+            <img src="img/about-image.png" alt="">
+            <img src="img/about-image-mobile.png" alt="" class="img-mobile">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="about-company__content">
+            <h2>About the company</h2>
+            <div class="box-text">
+              <p>Buying a car is an important step, so to avoid confusion and ensure you're buying a truly good vehicle,
+                autoTalsi.lv will help make the buying process even simpler, more convenient, and faster.
+                We work only with reliable and time-tested partners who will expertly select the right car for you from
+                the available options.</p>
+              <p><strong>autoTalsi.lv</strong> A reliable and fast leasing platform with carefully selected and verified vehicles from our partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback bg-blue">
+    <div class="container">
+      <div class="decor decor1">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#decor1"></use>
+        </svg>
+      </div>
+      <div class="decor decor2">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#decor1"></use>
+        </svg>
+      </div>
+      <div class="decor decor3">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#decor1"></use>
+        </svg>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <h2>Check your car leasing terms</h2>
+          <div class="box-text">
+            <p>It's free and doesn't obligate you to anything.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Name*" name="name" required>
+              <span class="label-error__text">
+                You must specify the car number
+              </span>
+            </label>
+            <label class="label-error"><input type="text" placeholder="Telephone" class="phone-input phone-input1"
+                name="phone" required>
+              <span class="label-error__text">
+                You must specify the car number
+              </span>
+            </label>
+            <button type="submit" class="btn btn-accent">Check terms and conditions</button>
+
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security
+                  policy</a> and <a href="#" class="d-inline text-decoration color-white">rules for the use of personal
+                  data</a></span>
+            </label>
           </form>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="row mb-40 align-items-center">
-      <div class="col-12 col-lg-5">
-        <h2>Каталог автомобилей: </h2>
-      </div>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="footer-top__content">
+              <div class="footer-col">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
-      <div class="col-12 col-lg-7 d-flex flex-wrap align-items-center">
-        <ul class="list-tags ul-my">
-          <li><a href="#" class="bg-orange">Скоро в продаже</a></li>
-          <li><a href="#" class="bg-red">Акция</a></li>
-        </ul>
-        <div class="all-models-result">всего в каталоге: 298 моделей</div>
-      </div>
-    </div>
-
-    <div class="row catalog-car-row">
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto1.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">-1500 €</li>
-          </ul>
-
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto2.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="old-price">7 190 €</div>
-                <div class="new-price font-700 color-red">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto3.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto4.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto5.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto6.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto7.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto8.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto9.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto10.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto11.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-        <div class="card">
-          <a href="product.html" class="card-img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="
-		img/auto12.jpg 524w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-
-          <div class="card-body">
-            <a href="product.html" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics ul-my">
-              <li><p>5l/100km</p></li>
-              <li><p>2011</p></li>
-              <li><p>2.0 diesel</p></li>
-              <li><p>mechanics</p></li>
-            </ul>
-            <div class="card-footer">
-              <div class="card-footer__item">
-                <div class="price font-700">4 190 €</div>
-              </div>
-              <div class="card-footer__item">
-                <div class="credit-sum font-500">65 €/month</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <a href="catalog.html" class="btn btn-accent btn-toggle">
-          <span class="btn-text">Перейти в каталог</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="professional">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-6">
-        <div class="professional-image">
-          <div class="decor decor1">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-          <div class="decor decor2">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-          <div class="decor decor3">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-          <img src="img/professional-image.jpg" alt="">
-          <img src="img/professional-image-mobile.png" class="img-mobile" alt="">
-
-        </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="professional-content">
-          <h2>Профессионально
-            подбираем авто с 2007 года</h2>
-          <div class="box-text">
-            <p>А ещё некfromорые особенности внутренней политики представляют собой не что иное, как квинтэссенцию победы
-              маркетинга над разумом и должны быть превращены:</p>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-5">
-              <ul class="list-decor ul-my">
-                <li>Экономия времени</li>
-                <li>Доступность</li>
-                <li>Safety данных</li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6">
-              <ul class="list-decor ul-my">
-                <li>Широкий выбор авто</li>
-                <li>Удобное оформление</li>
-                <li>Индивидуальный подход</li>
-              </ul>
-            </div>
-          </div>
-
-          <a href="#" class="btn btn-border-accent">подробнее</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="advantages m-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>Начните свое путешествие на новой машине!</h2>
-      </div>
-    </div>
-    <div class="row advantages-wrapper">
-      <div class="col-6 col-md-3">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
-          <div class="advantages-box__body">
-            <p>С полным баком после <br>покупки</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-          <div class="advantages-box__body">
-            <p>С гарантией <br>
-              до 3 месяцев</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
-          <div class="advantages-box__body">
-            <p>С новой зимней <br>резиной</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-          <div class="advantages-box__body">
-            <p>Несмfromря на плохую <br>кредитную историю</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="interested">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>You may be interested in</h2>
-      </div>
-
-      <div class="col-12">
-        <div class="interested-slider">
-          <div class="slide">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
-              <h3>Car loan</h3>
-              <div class="box-text">
-                <p>A suitable solution if you are planning to buy a used car.</p>
+                <div class="footer-box">
+                  <h3>More on the site</h3>
+                  <ul class="footer-menu ul-my">
+                    <li><a href="#">Car leasing</a></li>
+                    <li><a href="#">Buying a car</a></li>
+                    <li><a href="#">Auto partners</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+                </div>
               </div>
 
-              <a href="#" class="btn btn-accent">
-                <span class="btn-text">More details</span>
-              </a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/about-icon2.svg" alt=""></div>
-              <h3>CASCO insurance</h3>
-              <div class="box-text">
-                <p>Free vehicle-related technical assistance and guaranteed use of original spare parts for repairs on vehicles up to 5 years old.</p>
-              </div>
+              <div class="footer-col">
+                <div class="footer-box">
+                  <h3>Enterprise</h3>
 
-              <a href="#" class="btn btn-accent">
-                <span class="btn-text">More details</span>
-              </a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/about-icon3.svg" alt=""></div>
-              <h3>OCTA Insurance</h3>
-              <div class="box-text">
-                <p>All your financial services contracts in one place. No need to worry about payments, as they will be processed automatically from your bank account.</p>
-              </div>
+                  <div class="address-box">
+                    <p>SIA 'RP motors' 44103127443</p>
+                    <p>Valmiera - Rīgas iela 62, LV-4201</p>
+                  </div>
 
-              <a href="#" class="btn btn-accent">
-                <span class="btn-text">More details</span>
-              </a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/about-icon1.svg" alt=""></div>
-              <h3>Car loan</h3>
-              <div class="box-text">
-                <p>A suitable solution if you are planning to buy a used car.</p>
-              </div>
-
-              <a href="#" class="btn btn-accent">
-                <span class="btn-text">More details</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="brands-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>Доступные бренды автомобилей</h2>
-      </div>
-
-      <div class="col-12">
-        <div class="brands-slider">
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand2.png 1280w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand1.png 1836w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand3.png 3139w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand4.png 960w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-           <span class="brand-item__img"><img
-               alt=""
-               data-sizes="auto"
-               data-srcset="img/brand5.png 4096w"
-               data-src="medium"
-               class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand2.png 1280w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="brand-page.html" class="brand-item">
-          <span class="brand-item__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/brand1.png 1836w"
-              data-src="medium"
-              class="lazyload"/></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <a href="brands.html" class="btn btn-border-accent">посмfromреть все</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-company" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="about-company__image">
-          <div class="decor decor1">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-          <div class="decor decor2">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-          <div class="decor decor3">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-          <div class="decor decor4">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#decor1"></use>
-            </svg>
-          </div>
-
-<!--          <img-->
-<!--              alt=""-->
-<!--              data-sizes="auto"-->
-<!--              data-srcset="img/about-image.png 992w, img/about-image-mobile.png 768w"-->
-<!--              data-src="medium"-->
-<!--              class="lazyload"/>-->
-          <img src="img/about-image.png" alt="">
-          <img src="img/about-image-mobile.png" alt="" class="img-mobile">
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="about-company__content">
-          <h2>About the company</h2>
-          <div class="box-text">
-            <p>Buying a car is an important step, so to avoid confusion and ensure you're buying a truly good vehicle, autoTalsi.lv will help make the buying process even simpler, more convenient, and faster.
-              We work only with reliable and time-tested partners who will expertly select the right car for you from the available options.</p>
-              <p><strong>autoTalsi.lv</strong> Надежная и быстрая лизинговая платформа с тщательно fromобранными и проверенными автомобилями
-              from партнеров.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="callback bg-blue">
-  <div class="container">
-    <div class="decor decor1">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#decor1"></use>
-      </svg>
-    </div>
-    <div class="decor decor2">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#decor1"></use>
-      </svg>
-    </div>
-    <div class="decor decor3">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#decor1"></use>
-      </svg>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-6">
-        <h2>Check your car leasing terms</h2>
-        <div class="box-text">
-          <p>It's free and doesn't obligate you to anything.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <form method="post" class="form-callback">
-          <label><input type="text" placeholder="Name*" name="name" required>
-            <span class="label-error__text">
-                Необходимо указать номер авто
-              </span>
-          </label>
-          <label class="label-error"><input type="text" placeholder="Telephone" class="phone-input phone-input1" name="phone" required>
-            <span class="label-error__text">
-                Необходимо указать номер авто
-              </span>
-          </label>
-          <button type="submit" class="btn btn-accent">Check terms and conditions</button>
-
-          <label class="checkbox">
-            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
-                href="#"
-                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="footer-top__content">
-            <div class="footer-col">
-              <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-
-              <div class="footer-box">
-                <h3>More on the site</h3>
-                <ul class="footer-menu ul-my">
-                  <li><a href="#">Car leasing</a></li>
-                  <li><a href="#">Buying a car</a></li>
-                  <li><a href="#">Auto partners</a></li>
-                  <li><a href="#">About Us</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="footer-col">
-              <div class="footer-box">
-                <h3>Enterprise</h3>
-
-                <div class="address-box">
-                  <p>SIA 'RP motors' 44103127443</p>
-                  <p>Valmiera - Rīgas iela 62, LV-4201</p>
+                  <ul class="list-maps ul-my">
+                    <li>
+                      <a href="#" class="list-maps-links google-link">
+                        <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
+                        <span class="list-maps-links__text">Show on map</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="list-maps-links waze-link">
+                        <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                        <span class="list-maps-links__text">Get directions in Waze</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
 
-                <ul class="list-maps ul-my">
-                  <li>
-                    <a href="#" class="list-maps-links google-link">
-                      <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
-                      <span class="list-maps-links__text">Show on map</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-maps-links waze-link">
-                      <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                      <span class="list-maps-links__text">Get directions in Waze</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="footer-box">
-                <h3>Safety</h3>
-                <ul class="footer-menu ul-my">
-                  <li><a href="#">Terms of use</a></li>
-                  <li><a href="#">Security Policy</a></li>
-                </ul>
+                <div class="footer-box">
+                  <h3>Safety</h3>
+                  <ul class="footer-menu ul-my">
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Security Policy</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="footer-map">
-            <iframe
+          <div class="col-12 col-lg-6">
+            <div class="footer-map">
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2141.745778315709!2d25.39676171603905!3d57.53374208106692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ebee7ddacb45e9%3A0xd39b13b6c12e8967!2zUsSrZ2FzIGllbGEgNjIsIFZhbG1pZXJhLCBMVi00MjAxLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sua!4v1663789538417!5m2!1sru!2sua"
                 style="border:0;" allowfullscreen="" class="lazyload" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
-          <p>TalsiAvto</p>
-          <div class="copyright">© 2021. All rights reserved.</div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+            <p>TalsiAvto</p>
+            <div class="copyright">© 2021. All rights reserved.</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Модальное окно -->
-<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Leave a request</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>We will contact you shortly</p>
+
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Leave a request</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg></button>
         </div>
-        <form class="form-modal">
-          <label>
-            <input type="text" placeholder="Name*" name="name">
-          </label>
-          <label><input type="text" placeholder="Telephone" class="phone-input phone-input5" name="phone"></label>
+        <div class="modal-body">
+          <div class="box-text">
+            <p>We will contact you shortly</p>
+          </div>
+          <form class="form-modal">
+            <label>
+              <input type="text" placeholder="Name*" name="name">
+            </label>
+            <label><input type="text" placeholder="Telephone" class="phone-input phone-input5" name="phone"></label>
 
-          <button type="submit" class="btn btn-accent"><span class="btn-text">pick up a car</span></button>
+            <button type="submit" class="btn btn-accent"><span class="btn-text">pick up a car</span></button>
 
-          <label class="checkbox">
-            <input type="checkbox" class="checkbox-inp" name="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security policy</a> and <a
-                href="#"
-                class="d-inline text-decoration color-white">rules for the use of personal data</a></span>
-          </label>
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox-inp" name="checkbox">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">I agree with <a href="#" class="d-inline color-white text-decoration">security
+                  policy</a> and <a href="#" class="d-inline text-decoration color-white">rules for the use of personal
+                  data</a></span>
+            </label>
 
-          <label class="checkbox">
-            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">I want to receive marketing offers</span>
-          </label>
-        </form>
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">I want to receive marketing offers</span>
+            </label>
+          </form>
+        </div>
+
       </div>
-
     </div>
   </div>
-</div>
-<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Application sent!</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>Thank you! Our specialist will contact you by phone shortly to clarify the details.</p>
+  <div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Application sent!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg></button>
         </div>
-      </div>
+        <div class="modal-body">
+          <div class="box-text">
+            <p>Thank you! Our specialist will contact you by phone shortly to clarify the details.</p>
+          </div>
+        </div>
 
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/intlTelInput.js"></script>
-<script src="js/fileup.js"></script>
-<script src="js/lazysizes.min.js"></script>
-<script src="js/common.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/intlTelInput.js"></script>
+  <script src="js/fileup.js"></script>
+  <script src="js/lazysizes.min.js"></script>
+  <script src="js/common.js"></script>
 
 </body>
+
 </html>

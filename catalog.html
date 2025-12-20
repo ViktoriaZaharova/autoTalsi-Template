@@ -44,6 +44,49 @@
 
   <div class="overlay-mobile"></div>
 
+  <div class="mobile-sorting mobile-wrapper">
+  <div class="sidebar-head">
+    <h2>Sorting</h2>
+    <div class="sidebar-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="sidebar-box">
+    <ul class="list-checkbox-sidebar ul-my">
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" checked name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Price: from cheap to expensive</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Price: from expensive to cheap</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">New ones first</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Old ones first</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+
   <div class="mobile-search mobile-wrapper">
     <div class="sidebar-head">
       <h2>pick up a car</h2>
@@ -393,7 +436,7 @@
         <div class="col-12">
           <ul class="breadcrumbs ul-my">
             <li><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
-            <li><span>Каталог</span></li>
+            <li><span>Catalog</span></li>
           </ul>
         </div>
 
@@ -404,7 +447,7 @@
           <div class="sidebar">
 
             <div class="sidebar-head">
-              <h2>Параметры</h2>
+              <h2>Options</h2>
               <div class="sidebar-close">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#close"></use>
@@ -449,7 +492,7 @@
                         <label class="checkbox">
                           <input type="checkbox" name="checkbox" class="checkbox-inp">
                           <span class="checkbox-custom"></span>
-                          <span class="checkbox-text">Все модели</span>
+                          <span class="checkbox-text">All models</span>
                         </label>
                       </li>
                       <li>
@@ -470,28 +513,28 @@
                         <label class="checkbox">
                           <input type="checkbox" name="checkbox" class="checkbox-inp">
                           <span class="checkbox-custom"></span>
-                          <span class="checkbox-text">1 серии</span>
+                          <span class="checkbox-text">1 episode</span>
                         </label>
                       </li>
                       <li>
                         <label class="checkbox">
                           <input type="checkbox" name="checkbox" class="checkbox-inp">
                           <span class="checkbox-custom"></span>
-                          <span class="checkbox-text">2 серии</span>
+                          <span class="checkbox-text">2 episode</span>
                         </label>
                       </li>
                       <li>
                         <label class="checkbox">
                           <input type="checkbox" name="checkbox" class="checkbox-inp">
                           <span class="checkbox-custom"></span>
-                          <span class="checkbox-text">3 серии</span>
+                          <span class="checkbox-text">3 episode</span>
                         </label>
                       </li>
                       <li>
                         <label class="checkbox">
                           <input type="checkbox" name="checkbox" class="checkbox-inp">
                           <span class="checkbox-custom"></span>
-                          <span class="checkbox-text">5 серии</span>
+                          <span class="checkbox-text">5 episode</span>
                         </label>
                       </li>
                       <li>
@@ -539,7 +582,7 @@
 
               <div class="sidebar-box">
                 <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem3"
-                  aria-expanded="true" aria-controls="collapseItem3">Комплектация</h4>
+                  aria-expanded="true" aria-controls="collapseItem3">Equipment</h4>
                 <div class="collapse" id="collapseItem3">
                   <div class="sidebar-box__body">
                     <label>
@@ -560,16 +603,16 @@
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#clear-filter"></use>
             </svg>
-            Очистить фильтр</a>
+            Clear filter</a>
         </div>
 
         <div class="col-12 col-lg-9">
 
           <div class="title-row">
-            <h1>Наши авто:</h1>
+            <h1>Our cars:</h1>
 
             <ul class="list-tags d-flex d-lg-none ul-my">
-              <li><a href="#" class="bg-red">Акция</a></li>
+              <li><a href="#" class="bg-red">Promotion</a></li>
             </ul>
           </div>
 
@@ -580,7 +623,7 @@
                   <use xlink:href="img/sprite.svg#filter"></use>
                 </svg>
               </div>
-              <div class="btn-catalog__text">Фильтровать</div>
+              <div class="btn-catalog__text">Filter</div>
             </div>
             <div class="btn-catalog btn-sorting">
               <div class="btn-catalog__icon">
@@ -588,24 +631,24 @@
                   <use xlink:href="img/sprite.svg#sorting"></use>
                 </svg>
               </div>
-              <div class="btn-catalog__text">Сортировка</div>
+              <div class="btn-catalog__text">Sorting</div>
             </div>
           </div>
 
           <div class="catalog-top">
             <div class="sorting-box">
-              <p>Сортировать:</p>
+              <p>Sort:</p>
               <label class="label-select">
                 <select name="select" class="select-sorting">
-                  <option value="По возрастанию цены">По возрастанию цены</option>
-                  <option value="Сначала новые">Сначала новые</option>
-                  <option value="Сначала новые">Сначала новые</option>
+                  <option value="Ascending price">Ascending price</option>
+                  <option value="New ones first">New ones first</option>
+                  <option value="New ones first">New ones first</option>
                 </select>
               </label>
             </div>
 
             <ul class="list-tags ul-my">
-              <li><a href="#" class="bg-red">Акция</a></li>
+              <li><a href="#" class="bg-red">Promotion</a></li>
             </ul>
 
           </div>
@@ -629,10 +672,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -664,10 +707,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -699,10 +742,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -735,10 +778,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -770,10 +813,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -805,10 +848,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -841,10 +884,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -876,10 +919,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -911,10 +954,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -947,10 +990,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -982,10 +1025,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -1017,10 +1060,10 @@
                       <p>2011</p>
                     </li>
                     <li>
-                      <p>2.0 дизель</p>
+                      <p>2.0 diesel</p>
                     </li>
                     <li>
-                      <p>механика</p>
+                      <p>mechanics</p>
                     </li>
                   </ul>
                   <div class="card-footer">
@@ -1037,7 +1080,7 @@
 
             <div class="col-12 d-none d-sm-block">
               <a href="#" class="btn btn-accent btn-toggle">
-                <span class="btn-text">показать больше авто</span>
+                <span class="btn-text">show more cars</span>
               </a>
             </div>
 
@@ -1047,11 +1090,11 @@
                   <li class="page-item">
                     <a class="page-link page-link-arrow" href="#" aria-label="Previous">
                       <span aria-hidden="true">
-                        </span>
+                      </span>
                     </a>
                   </li>
                   <li class="page-item"><a class="page-link page-link-arrow" href="#">
-                      </a>
+                    </a>
                   </li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -1085,22 +1128,22 @@
         <div class="col-12">
           <div class="box-text">
             <p>We built our work system around the principle of a continuous, quality-focused process.
-Of course, like any reputable company, we also encountered mistakes, setbacks, and failures. All of these
-problems
-became invaluable experience for us.
-              Безусловно, как любую известную компанию, нас тоже подстерегали ошибки, неудачи и провалы. Все эти
-              проблемы,
-              стали для нас бесценным опытом. По прошествии более 10 лет, мы выстроили оптимальные услуги, условия и
-              инструменты рабfromы. Главное, что каждый наш клиент находит то, что ему нужно. Выбирает те правила,
-              кfromорые,
-              он хочет. Присоединяйтесь! Меняйте правила, забирайте выгоды!</p>
+              Of course, like any reputable company, we also encountered mistakes, setbacks, and failures. All of these
+              problems
+              became invaluable experience for us.
+              Of course, like any reputable company, we've also encountered mistakes, setbacks, and failures. All of
+              these
+              problems have become invaluable experience for us. After more than 10 years, we've developed optimal
+              services, conditions, and
+              working tools. The most important thing is that each of our clients finds what they need. They choose the
+              rules they want. Join us! Change the rules, reap the benefits!</p>
 
-            <p>Безусловно, как любую известную компанию, нас тоже подстерегали ошибки, неудачи и провалы. Все эти
-              проблемы,
-              стали для нас бесценным опытом. По прошествии более 10 лет, мы выстроили оптимальные услуги, условия и
-              инструменты рабfromы. Главное, что каждый наш клиент находит то, что ему нужно. Выбирает те правила,
-              кfromорые,
-              он хочет. Присоединяйтесь! Меняйте правила, забирайте выгоды!</p>
+            <p>Of course, like any reputable company, we've also encountered mistakes, setbacks, and failures. All of
+              these
+              problems have become invaluable experience for us. After more than 10 years, we've developed optimal
+              services, conditions, and
+              working tools. The most important thing is that each of our clients finds what they need. They choose the
+              rules they want. Join us! Change the rules, reap the benefits!</p>
           </div>
         </div>
       </div>

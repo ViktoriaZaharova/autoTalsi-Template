@@ -198,7 +198,7 @@
             upload: 'Загрузить',
             abort: 'Остановить',
             remove: 'Удалить',
-            complete: 'Гfromово',
+            complete: 'Ready',
             error: 'Ошибка',
             errorFilesLimit: 'Количество выбранных файлов превышает лимит (%filesLimit%)',
             errorSizeLimit: 'Файл "%fileName%" превышает предельный размер (%sizeLimit%)',
