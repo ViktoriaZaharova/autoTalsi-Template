@@ -94,7 +94,7 @@ $.fileup({
     files: [],
     fieldName: 'filedata',
     extraFields: {},
-    // lang: 'en',
+    lang: 'en',
     sizeLimit: 0,
     filesLimit: 0,
     method: 'post',
@@ -454,9 +454,6 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
 });
 
-// $('.sidebar [data-toggle="collapse"]').collapse({
-//     toggle: true,
-// });
 
 
 // hidden list > 5
