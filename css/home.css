@@ -66,9 +66,9 @@
 .main-slider__item-img {
   max-width: 1035px;
   width: 100%;
-  /* position: absolute;
+  position: absolute;
   right: -242px;
-  top: -19px; */
+  top: -19px;
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;

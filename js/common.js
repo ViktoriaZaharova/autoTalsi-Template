@@ -19,65 +19,38 @@ $('.main-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 });
 
-$('.dropdown-menu .dropdown-menu-list .dropdown').on('click', function(e) {
-    e.stopPropagation();
+// $('.dropdown-menu .dropdown-menu-list >.dropdown').on('click', function(e) {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     $(this).addClass('show').find('.dropdown-menu').addClass('show');
+// });
+
+
+$('.dropdown-menu .dropdown-toggle').on('click', function (e) {
     e.preventDefault();
-    $(this).addClass('show').find('.dropdown-menu').addClass('show');
+    e.stopPropagation();
+
+    const $parent = $(this).parent('.dropdown');
+
+    $parent.siblings('.dropdown').removeClass('show')
+        .find('.dropdown-menu').removeClass('show');
+
+    $parent.toggleClass('show');
+    $parent.children('.dropdown-menu').toggleClass('show');
 });
 
 
 $(document).ready(function () {
-    var input = document.querySelector(".phone-input1");
-    window.intlTelInput(input, {
-        // separateDialCode: true,
-        defaultCountry: 'auto',
-        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
-            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
-            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
-            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+  $('.phone-input').each(function () {
+    window.intlTelInput(this, {
+      // separateDialCode: true, // если нужно показывать отдельный код страны
+      defaultCountry: 'auto',
+      onlyCountries: ["al","ad","at","by","be","ba","bg","hr","cz","dk",
+        "ee","fo","fi","fr","de","gi","gr","va","hu","is","ie","it","lv",
+        "li","lt","lu","mk","mt","md","mc","me","nl","no","pl","pt","ro",
+        "ru","sm","rs","sk","si","es","se","ch","ua","gb"],
     });
-
-    var input2 = document.querySelector(".phone-input2");
-    window.intlTelInput(input2, {
-        // separateDialCode: true,
-        defaultCountry: 'auto',
-        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
-            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
-            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
-            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
-    });
-
-    var input3 = document.querySelector(".phone-input3");
-    window.intlTelInput(input3, {
-        // separateDialCode: true,
-        defaultCountry: 'auto',
-        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
-            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
-            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
-            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
-    });
-
-    var input4 = document.querySelector(".phone-input4");
-    window.intlTelInput(input4, {
-        // separateDialCode: true,
-        defaultCountry: 'auto',
-        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
-            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
-            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
-            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
-    });
-
-    var input5 = document.querySelector(".phone-input5");
-    window.intlTelInput(input5, {
-        // separateDialCode: true,
-        defaultCountry: 'auto',
-        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
-            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
-            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
-            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
-    });
-
-
+  });
 });
 
 // invoke plugin
@@ -131,9 +104,7 @@ $('.slider-range2').slider({
         "ui-slider-handle": "ui-corner-all"
     },
     slide: function (event, ui) {
-        //Поле минимального значения
         $(".dec3").val(ui.values[0]);
-        //Поле максимального значения
         $(".dec4").val(ui.values[1]);
     }
 });
@@ -149,9 +120,7 @@ $('.slider-range3').slider({
         "ui-slider-handle": "ui-corner-all"
     },
     slide: function (event, ui) {
-        //Поле минимального значения
         $(".dec5").val(ui.values[0]);
-        //Поле максимального значения
         $(".dec6").val(ui.values[1]);
     }
 });
@@ -168,9 +137,7 @@ $('.slider-range4').slider({
         "ui-slider-handle": "ui-corner-all"
     },
     slide: function (event, ui) {
-        //Поле минимального значения
         $(".dec7").val(ui.values[0] + ' ' + '€');
-        //Поле максимального значения
         $(".dec8").val(ui.values[1] + ' ' + '€');
     }
 });
@@ -187,7 +154,6 @@ $('.slider-range5').slider({
         "ui-slider-handle": "ui-corner-all"
     },
     slide: function (event, ui) {
-        //Поле минимального значения
         $(".dec9").val(ui.value + ' ' + '€');
     }
 });
