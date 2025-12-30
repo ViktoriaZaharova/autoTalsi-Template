@@ -53,11 +53,6 @@ $(document).ready(function () {
   });
 });
 
-// invoke plugin
-// $('.inp-file').MultiFile({
-//     list: '.files-list'
-// });
-
 // this is your selector
 $.fileup({
     url: window.location.pathname + window.location.search,
@@ -98,7 +93,7 @@ $(".dec2").val($(".slider-range1").slider("values", 1) + ' ' + '€');
 $('.slider-range2').slider({
     range: true,
     min: 1930,
-    max: 2022,
+    max: 2025,
     values: [1970, 2015],
     classes: {
         "ui-slider-handle": "ui-corner-all"
@@ -114,7 +109,7 @@ $(".dec4").val($(".slider-range2").slider("values", 1));
 $('.slider-range3').slider({
     range: true,
     min: 1930,
-    max: 2022,
+    max: 2025,
     values: [1970, 2015],
     classes: {
         "ui-slider-handle": "ui-corner-all"
